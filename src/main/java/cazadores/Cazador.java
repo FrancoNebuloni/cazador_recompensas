@@ -14,11 +14,13 @@ abstract public class Cazador {
             if (this.experiencia > profugo.getInocencia() && condicionEspecifica(profugo)) {
                 capturados.add(profugo);
                 zona.removerProfugo(profugo);
+                this.setExperiencia();
             } else {
                 this.intimidar(profugo);
             }
         }
     }
+    
     abstract public Boolean condicionEspecifica(IProfugo profugo);
 
     public void intimidar(IProfugo profugo) {
