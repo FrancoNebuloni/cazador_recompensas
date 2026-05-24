@@ -14,4 +14,8 @@ public interface IProfugo {
     void reducirHabilidad();
 
     void disminuirInocencia();
+
+    void setInocencia(Integer inocencia);
+
+    void setHabilidad(Integer habilidad);
 }

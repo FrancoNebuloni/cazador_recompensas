@@ -46,4 +46,13 @@ public class Profugo implements IProfugo {
     public void disminuirInocencia() {
         inocencia = Math.max(0, inocencia - 2);
     }
+
+    public void setInocencia(Integer inocencia) {
+        this.inocencia = inocencia;
+    }
+
+    public void setHabilidad(Integer habilidad) {
+        this.habilidad = habilidad;
+    }
+    
 }
